@@ -4,9 +4,31 @@
   "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
   
 <mapper namespace="com.iu.base.board.notice.NoticeDAO">
+	<sql id="search">
+		<where>
+			<if test="kind == 'title'">
+				TITLE LIKE CONCAT('%',#{search},'%')
+			</if>
+			<if test="kind == 'contents'">
+				CONTENTS LIKE CONCAT('%', #{search},'%')
+			</if>
+			<if test="kind == 'writer'">
+				WRITER LIKE CONCAT('%', #{search}, '%')
+			</if>		
+			
+		</where>
+	</sql>
+	
+	<select id="getTotalCount" parameterType="Pager" resultType="Long">
+			SELECT COUNT(NUM) FROM NOTICE
+			<include refid="search"></include>
+	</select>
+	
 	
 	<select id="getList" parameterType="Pager" resultType="NoticeVO" >
-		SELECT * FROM NOTICE ORDER BY NUM DESC
+		SELECT * FROM NOTICE 
+		<include refid="search"></include>
+		ORDER BY NUM DESC
 		LIMIT #{startRow}, #{perPage}
 	</select>
 	

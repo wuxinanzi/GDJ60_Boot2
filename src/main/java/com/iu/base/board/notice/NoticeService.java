@@ -19,6 +19,7 @@ public class NoticeService implements BoardService{
 		// TODO Auto-generated method stub
 		pager.makeStartRow();
 		
+		pager.makeNum(noticeDAO.getTotalCount(pager));
 		return noticeDAO.getList(pager);
 	}
 
@@ -31,7 +32,7 @@ public class NoticeService implements BoardService{
 	@Override
 	public int setInsert(BoardVO boardVO) throws Exception {
 		// TODO Auto-generated method stub
-		return 0;
+		return noticeDAO.setInsert(boardVO);
 	}
 
 	@Override

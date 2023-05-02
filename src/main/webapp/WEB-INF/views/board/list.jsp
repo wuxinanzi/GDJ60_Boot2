@@ -51,9 +51,33 @@
                     		</c:forEach>
                     		</tbody>
                     	</table>
+                    	<c:if test="${pager.pre}">
+                    		<a href="./list?page=${pager.startNum-1}">이전</a>
+                    	</c:if>
+                    	
+                    	<c:forEach begin="${pager.startNum}" end="${pager.lastNum}" var="i">
+                    			<a href="./list?page=${i}">${i}</a>
+                    	</c:forEach>
+                    	
+                    	<c:if test="${pager.next}">
+                    		<a href="./list?page=${pager.lastNum+1}">다음</a>
+                    	</c:if>
+                    	
+                    	<form action="./list">
+                    	<select>
+                    		<option value="title">Title</option>
+                    		<option value="contents">Contents</option>
+                    		<option value="writer">Writer</option>
+                    	</select>
+                    	
+                    	<input type="text" name="search">
+                    	<button type="submit">Search</button>
+                    	</form>
                     </div>
                   </div>
-                  </section>  
+                  </section>
+                  
+                  <a href="./add">WRITE</a> 
         </main>
              <!-- Footer 적용-->
  <c:import url="../temp/footer.jsp"></c:import>
