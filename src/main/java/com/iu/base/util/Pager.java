@@ -16,6 +16,7 @@ public class Pager {
 	//시작 index 번호
 	private Long startRow;
 	
+	private Long lastRow;
 	//시작 page 번호
 	private Long startNum;
 	//끝 page 번호
@@ -32,6 +33,7 @@ public class Pager {
 	
 	//다음 블럭 유무
 	private boolean next;//false 다음 X, true O
+	
 	
 	//page 계산하는 메서드
 	public void makeNum(Long totalCount) {

@@ -15,8 +15,14 @@ public interface BoardDAO {
 	//글하나 조회
 	public BoardVO getDetail(BoardVO boardVO)throws Exception;
 	
-	//글쓰기 
+	//File 조회
+	public BoardFileVO getFileDetail(BoardFileVO boardFileVO)throws Exception;
+	
+	//글쓰기
 	public int setInsert(BoardVO boardVO)throws Exception;
+	
+	//File 저장
+	public int setFileInsert(BoardFileVO boardFileVO)throws Exception;
 	
 	//글수정
 	public int setUpdate(BoardVO boardVO)throws Exception;

@@ -13,6 +13,7 @@
         <!-- css favicon -->
         <c:import url="../temp/style.jsp"></c:import>
         <!-- css favicon -->
+        
     </head>
 </head>
 <body>
@@ -21,6 +22,7 @@
          <!-- Navigation-->
             <c:import url="../temp/header.jsp"></c:import>
          <!-- Header-->
+ 
          
             <!-- Page content-->
             <section class="py-5">
@@ -98,8 +100,10 @@
             </section>
         </main>
              <!-- Footer 적용-->
+             
  <c:import url="../temp/footer.jsp"></c:import>
  			 <!-- Footer 끝 -->
  <script type="text/javascript" src="../js/boardform.js"></script>
+ 
 </body>
 </html>

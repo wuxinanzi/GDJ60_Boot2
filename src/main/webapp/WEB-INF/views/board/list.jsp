@@ -13,6 +13,7 @@
         <!-- css favicon -->
         <c:import url="../temp/style.jsp"></c:import>
         <!-- css favicon -->
+        <link href="/css/boardSidebar.css" rel="stylesheet">
     </head>
 </head>
 <body>
@@ -21,6 +22,9 @@
          <!-- Navigation-->
             <c:import url="../temp/header.jsp"></c:import>
          <!-- Header-->
+         <div id="sidebar" class="card my-3">
+        	<a href="https://www.naver.com" class="naver-link">무엇이든 도와드리겠습니다</a>
+        </div>
          
          <section class="bg-light py-5">
                 <div class="container px-5 my-5">
@@ -81,7 +85,7 @@
         </main>
              <!-- Footer 적용-->
  <c:import url="../temp/footer.jsp"></c:import>
-      
+ <c:import url="../temp/roulette.jsp"></c:import>
       <!-- Footer 끝 -->
 </body>
 </html>
