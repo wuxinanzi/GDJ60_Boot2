@@ -9,10 +9,13 @@
 		<typeAlias type="com.iu.base.board.BoardFileVO" alias="BoardFileVO"/>
 	
 		<typeAlias type="com.iu.base.board.notice.NoticeVO" alias="NoticeVO"/>
-		<typeAlias type="com.iu.base.board.event.EventVO" alias="EventVO"/>
 		
+		
+		
+		<typeAlias type="com.iu.base.board.event.EventVO" alias="EventVO"/>
 		<typeAlias type="com.iu.base.board.event.EventFileVO" alias="EventFileVO"/>
-		<typeAlias type="com.iu.base.board.qna.QnaVO" alias="QnaVO"/>
+		
+	
 		
 		<typeAlias type="com.iu.base.util.Pager" alias="Pager"/>
 	</typeAliases>

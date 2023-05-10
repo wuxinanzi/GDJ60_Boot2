@@ -1,6 +1,6 @@
 package com.iu.base.util;
 
-import java.awt.Event;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.OutputStream;
@@ -11,9 +11,9 @@ import java.util.UUID;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.catalina.connector.OutputBuffer;
+
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.beans.propertyeditors.URLEditor;
+
 import org.springframework.stereotype.Component;
 import org.springframework.util.FileCopyUtils;
 import org.springframework.web.multipart.MultipartFile;
