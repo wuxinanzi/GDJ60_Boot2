@@ -5,18 +5,16 @@
   
 <configuration>
 	<typeAliases>
-		<typeAlias type="com.iu.base.board.BoardVO" alias="BoardVO"/>
-		<typeAlias type="com.iu.base.board.BoardFileVO" alias="BoardFileVO"/>
+		
 	
-		<typeAlias type="com.iu.base.board.notice.NoticeVO" alias="NoticeVO"/>
+		<typeAlias type="com.ware.group.notice.NoticeVO" alias="NoticeVO"/>
 		
 		
 		
-		<typeAlias type="com.iu.base.board.event.EventVO" alias="EventVO"/>
-		<typeAlias type="com.iu.base.board.event.EventFileVO" alias="EventFileVO"/>
+		
 		
 	
 		
-		<typeAlias type="com.iu.base.util.Pager" alias="Pager"/>
+		<typeAlias type="com.ware.group.util.Pager" alias="Pager"/>
 	</typeAliases>
 </configuration>  
